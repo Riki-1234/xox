@@ -40,6 +40,10 @@ void choose(int choice, char* board) {
     }
     else {
         cout << "Mjesto je vec iskoristeno\n";
+        cin >> odg;
+        const char c = choice == 1 ? 'X' : 'O';
+        const int index = odg - 1;
+        board[index] = c;
     }
 }
 
@@ -57,6 +61,8 @@ void pc_choose(int choice, char* board) {
             randomnum = rand() % 9 + 1;
             pc_odg = randomnum;
         }
+        const char pc = choice == 1 ? 'O' : 'X';
+        const int index = pc_odg - 1;
         board[index] = pc;
     }
 }
