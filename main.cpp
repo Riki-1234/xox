@@ -102,8 +102,8 @@ void pc_choose(char *board) {
 void win(const char *board) {
     for (int row = 0; row < 3; row++) {
         if (board[(row * 3) + 0] == playerCharacter
-            && board[(row * 3) + 1] == playerCharacter
-            && board[(row * 3) + 2] == playerCharacter) {
+         && board[(row * 3) + 1] == playerCharacter
+         && board[(row * 3) + 2] == playerCharacter) {
             if(mode) {
                 cout << "Pobijedio si.";
             }
@@ -113,8 +113,8 @@ void win(const char *board) {
             winorloss = true;
         }
         else if(board[(row * 3) + 0] == computerCharacter
-                && board[(row * 3) + 1] == computerCharacter
-                && board[(row * 3) + 2] == computerCharacter) {
+             && board[(row * 3) + 1] == computerCharacter
+             && board[(row * 3) + 2] == computerCharacter) {
             if(mode) {
                 cout << "Izgubio si.";
             }
@@ -126,8 +126,8 @@ void win(const char *board) {
     }
     for(int column = 0; column < 3; column++) {
         if (board[column + 0] == playerCharacter
-            && board[column + 3] == playerCharacter
-            && board[column + 6] == playerCharacter) {
+         && board[column + 3] == playerCharacter
+         && board[column + 6] == playerCharacter) {
             if(mode) {
                 cout << "Pobijedio si.";
             }
@@ -137,8 +137,8 @@ void win(const char *board) {
             winorloss = true;
         }
         else if(board[column + 0] == computerCharacter
-                && board[column + 3] == computerCharacter
-                && board[column + 6] == computerCharacter) {
+             && board[column + 3] == computerCharacter
+             && board[column + 6] == computerCharacter) {
             if(mode) {
                 cout << "Izgubio si.";
             }
@@ -149,11 +149,11 @@ void win(const char *board) {
         }
     }
     if (board[0] == playerCharacter
-        && board[4] == playerCharacter
-        && board[8] == playerCharacter
-        || board[2] == playerCharacter
-        && board[4] == playerCharacter
-        && board[6] == playerCharacter) {
+     && board[4] == playerCharacter
+     && board[8] == playerCharacter
+     || board[2] == playerCharacter
+     && board[4] == playerCharacter
+     && board[6] == playerCharacter) {
         if(mode) {
             cout << "Pobijedio si.";
         }
@@ -163,11 +163,11 @@ void win(const char *board) {
         winorloss = true;
     }
     else if(board[0] == computerCharacter
-            && board[4] == computerCharacter
-            && board[8] == computerCharacter
-            || board[2] == computerCharacter
-            && board[4] == computerCharacter
-            && board[6] == computerCharacter) {
+         && board[4] == computerCharacter
+         && board[8] == computerCharacter
+         || board[2] == computerCharacter
+         && board[4] == computerCharacter
+         && board[6] == computerCharacter) {
         if(mode){
             cout << "Izgubio si.";
         }
