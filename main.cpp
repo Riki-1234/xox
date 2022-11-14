@@ -81,7 +81,7 @@ void player2Choose(char* board) {
     }
 }
 
-void pc_choose(char *board) {
+void pc_choose(char* board) {
     time_t current_time = time(nullptr);
     srand((unsigned)current_time);
     int pc_odg = rand() % boardSize + 1;
@@ -99,7 +99,7 @@ void pc_choose(char *board) {
     }
 }
 
-void win(const char *board) {
+void win(const char* board) {
     for (int row = 0; row < 3; row++) {
         if (board[(row * 3) + 0] == playerCharacter
          && board[(row * 3) + 1] == playerCharacter
